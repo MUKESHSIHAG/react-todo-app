@@ -27,8 +27,8 @@ this.setState({content:''})
         return(
             <div>
                 <form onSubmit={ this.hadleSubmit }>
-                 <input type="text" id='input' className='toDo-input'style={{width:'92%',height:'20%', marginRight:'8px'}} onChange={ this.handleChange } value={this.state.content}></input>
-                 <Button  variant="contained" onClick={this.addToList}>+</Button>
+                 <input type="text" id='input' className='toDo-input'style={{width:'91%',height:'20%', marginRight:'8px'}} onChange={ this.handleChange } value={this.state.content}></input>
+                 <Button  variant="contained" style={{padding:'0%'}}onClick={this.addToList}>+</Button>
                 </form>
             </div>
         )
