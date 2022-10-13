@@ -18,6 +18,10 @@ class App extends Component {
       todos
     });
   }
+  deleteAll=()=>{
+
+    this.setState({todos:[]})
+  }
   addTodo = (todo) => {
     todo.id = Math.random();
     let todos = [...this.state.todos, todo];
@@ -31,6 +35,7 @@ class App extends Component {
         <h4 className="center blue-text"><ListAltOutlinedIcon fontSize='large'/> Todo List</h4>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} /> 
         <AddTodo addTodo={this.addTodo}/>
+        <Button onClick={this.deleteAll} style={{marginLeft:'40%',color:'white',backgroundColor:'#e3415f'}}>Clear list</Button>
       </div>
     );
   }

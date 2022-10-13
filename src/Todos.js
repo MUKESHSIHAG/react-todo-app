@@ -8,6 +8,7 @@ const Todos = ({todos, deleteTodo}) => {
                     <span onClick={() => {deleteTodo(todo.id)}}>{todo.content}</span>
                     <Button onClick={()=>{deleteTodo(todo.id)}} variant='filled' style={{backgroundColor:'#e3415f',color:'white', float:'right', padding:'0%'}}>-</Button>
                 </div>
+                
             )
         })
     ): (
